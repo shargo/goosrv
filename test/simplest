@@ -1,0 +1,40 @@
+curl "http://localhost:9999/categories/set/1/1/0/1st/10"
+curl "http://localhost:9999/categories/set/1/2/1/2nd/5"
+curl "http://localhost:9999/categories/set/1/3/2/3rd/3"
+curl "http://localhost:9999/categories/set/1/4/2/4th/5"
+curl "http://localhost:9999/categories/set/1/5/4/5th/5"
+curl "http://localhost:9999/categories/set/1/11/0/11th/17"
+curl "http://localhost:9999/categories/set/1/12/11/12th/16"
+curl "http://localhost:9999/categories/set/1/13/12/13th/14"
+curl "http://localhost:9999/categories/set/1/14/13/14th/14"
+curl "http://localhost:9999/categories/set/1/15/12/15th/15"
+curl "http://localhost:9999/categories/set/1/16/12/16th/16"
+curl "http://localhost:9999/categories/set/1/17/11/17th/17"
+curl "http://localhost:9999/categories/setcurrentversion/1"
+echo
+echo ------------------------------------------------
+curl "http://localhost:9999/categories/dump"
+echo
+echo ------------------------------------------------
+curl "http://localhost:9999/provide?userid=5&category=14&lat=56.55555&lon=43.1546123&epoch_start=1015&epoch_end=1845&desc=Good%20beer%20-%20place"
+echo
+curl "http://localhost:9999/provide?userid=5&category=13&lat=56.55555&lon=43.1546123&epoch_start=1115&epoch_end=1845&desc=Good%20beer%20-%20place%20#1"
+echo
+curl "http://localhost:9999/provide?userid=5&category=12&lat=56&lon=43.1546&epoch_start=1715&epoch_end=1845&desc=Good%20beer%20-%20place%20#2"
+echo
+echo ------------------------------------------------
+curl "http://localhost:9999/list/5"
+echo
+echo ------------------------------------------------
+curl "http://localhost:9999/wish?userid=5&category=14&lat=56.55555&lon=43.15461123&epoch_start=1730&epoch_end=1945&distance=1000000"
+echo
+echo ------------------------------------------------
+curl "http://localhost:9999/wish?userid=5&category=12&lat=56.55555&lon=43.15461123&epoch_start=1130&epoch_end=1245&distance=1000000"
+echo
+echo ------------------------------------------------
+curl "http://localhost:9999/wish?userid=5&category=12&lat=56.55555&lon=43.15461123&epoch_start=1010&epoch_end=1020&distance=1000000"
+echo
+echo ------------------------------------------------
+curl "http://localhost:9999/wish?userid=5&category=17&lat=56.55555&lon=43.15461123&epoch_start=1130&epoch_end=1245&distance=1000000"
+echo
+echo ------------------------------------------------

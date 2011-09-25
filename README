@@ -1,0 +1,10 @@
+This is  a prototype of a server side of a location and time based deal/ads/secondhand search system.
+This is only a prototype, the project itself has been killed by the facebook's "local deals".
+
+The projec probably will not manage to mature enough to get ets tables replaced by a more scalable db, or to get a proper supervision tree or build/release scripts, but it's fully fuctional.
+
+It uses misultin (https://github.com/ostinelli/misultin) as a web interface.
+
+Needless to say, you can do whatever you please with the code on your own risk.
+
+atal
